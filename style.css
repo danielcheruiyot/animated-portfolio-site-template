@@ -34,6 +34,8 @@ body {
     text-decoration: none;
     font-weight: 600;
     cursor:default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 
 }
 
@@ -44,6 +46,8 @@ body {
     margin-left: 35px;
     font-weight: 500;
     transition: .3s;
+    opacity:0;
+    animation: slideTop .5s ease forwards;
 
 }
 
@@ -93,6 +97,7 @@ body {
 }
 .home-image img {
    width: 500px;
+   margin-right: 50px;
     /**transform: translateY(20%);**/
 }
 
@@ -116,4 +121,45 @@ body {
     background: #0ef;
     color: #1f242d;
     box-shadow: 0 0 20px #0ef;
+}
+
+.logo {
+    font-family: "Poppins", sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
