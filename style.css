@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 :root {
-    --main-color: green;
+    --main-color: #0ef;
     --secondary-color: #1f242d;
 }
 
@@ -62,7 +62,7 @@ body {
     color: var(--main-color);
 }
 
-.home {
+.home, .section {
     position: relative;
     height: 100vh;
     width: 100%;
